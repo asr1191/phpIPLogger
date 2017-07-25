@@ -3,7 +3,7 @@
 ## PHP Configuration
 + Insert necessary values into ```vistor_config.php```
 + (optional) Change locations of ```visitor_config.php``` and ```visitor_connect.php```, but don't forget to update the require() statements in ```visitor_config.php``` and ```visitor_info.php```
-+ Use require() in your webpage to include the file ```visitor_info.php```
++ Use require() in your all your webpages to include the file ```visitor_info.php```
 
 ## MySQL Configuration
 + Create a database, and then create a table. The table should have the following structure:
