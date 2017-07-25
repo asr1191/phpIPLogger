@@ -2,8 +2,6 @@
 
 require('visitor_connect.php');
 
-
-
 $ip = $_SERVER['REMOTE_ADDR'];
 $hostname = gethostbyaddr($ip);
 $cur_page = $_SERVER['REQUEST_URI'];
@@ -30,7 +28,7 @@ if (!$conn->query("INSERT INTO ". $database.".".$tablename ." (ip_address, hostn
 //$stmt = $conn->prepare("INSERT INTO ? (ip_address, hostname, cur_url, pre_url, xff_headers) VALUES (?,?,?,?,?)");
 //$stmt->bind_param("ssssss", $tablename, $ip, $hostname, $cur_page, $pre_page, $xffjson);
 //$stmt->execute();
-
 //$stmt->close();
+
 $conn->close();
 ?>
