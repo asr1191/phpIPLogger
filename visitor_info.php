@@ -2,6 +2,10 @@
 
 require('visitor_connect.php');
 
+if(!$warnings){
+    error_reporting(E_ERROR | E_WARNING | E_PARSE);
+}
+
 $ip = $_SERVER['REMOTE_ADDR'];
 $hostname = gethostbyaddr($ip);
 $cur_page = $_SERVER['REQUEST_URI'];

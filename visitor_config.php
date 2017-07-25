@@ -6,4 +6,6 @@
 
     $database = "DATABASE_NAME_HERE";
     $tablename = "TABLENAME_HERE";
+
+    $warnings = false; //set to 'true' (without quotes) to enable warning reports
 ?>
